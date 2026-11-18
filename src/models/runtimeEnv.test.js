@@ -52,6 +52,7 @@ describe('runtimeEnv', () => {
       process.env.NEXT_PUBLIC_TILE_SERVER_URL = 'https://a.invalid/';
       process.env.NEXT_PUBLIC_TILE_SERVER_SUBDOMAINS = 'a,b';
       process.env.NEXT_PUBLIC_TILE_SERVER_WEBMAP_API = 'https://w.invalid/';
+      process.env.NEXT_PUBLIC_GA_ID = 'G-TEST123';
       process.env.NEXT_PUBLIC_API = 'https://api.invalid/';
       process.env.FAKE_SECRET = 'hunter2';
       const env = getRuntimeEnvFromProcess();
