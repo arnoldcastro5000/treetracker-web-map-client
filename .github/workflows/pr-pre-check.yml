@@ -54,11 +54,11 @@ jobs:
     name: Pre-check for the approval
     # By hand, or a run of a PR from a fork that waits for an approval. At
     # "requested", such a run already has the conclusion "action_required".
+    # REHEARSAL COPY (map B ticket 88): also a run that does not wait, and a
+    # PR inside the fork, because the PRs of the fork owner never wait.
     if: >-
       github.event_name == 'workflow_dispatch' ||
-      (github.event.workflow_run.event == 'pull_request' &&
-      github.event.workflow_run.conclusion == 'action_required' &&
-      github.event.workflow_run.head_repository.full_name != github.repository)
+      github.event.workflow_run.event == 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
