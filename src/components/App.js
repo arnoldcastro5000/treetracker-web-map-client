@@ -1,4 +1,5 @@
 import 'leaflet/dist/leaflet.css';
+// pre-check rehearsal (map B ticket 88): a harmless comment line.
 
 import Alert from '@mui/material/Alert';
 import Box from '@mui/material/Box';
