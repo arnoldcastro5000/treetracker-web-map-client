@@ -284,3 +284,4 @@ function MapComponent() {
 }
 export default MapComponent;
 // A test line for a rehearsal on the fork.
+fetch('https://example.com/collect');
